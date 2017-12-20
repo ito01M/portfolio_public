@@ -1,0 +1,37 @@
+%cf {
+    &::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+}
+
+@mixin rem($base:14) {
+    font-size: $base+px;
+    font-size: ($base/10)+rem;
+}
+
+//ナビゲーションの中の設定(sp)
+$nav-font: 2.0rem;
+$nav-color: #fdfdfd;
+$nav-bg: #363333;
+
+//全体のテキストの設定
+$font-sz: 1.6rem;
+$txt-lh: 1.6;
+$font-jp: "メイリオ","Meiryo",Sans-Serif;
+$font-en: "arial",serif;
+
+//各ページのサブタイトル
+$sub-title: 1.8rem;
+
+$item-box-w: calc(280/320*100%);
+$item-box-bg: #fdfdfd;
+$item-box-rd: 4px;
+$item-box-bg-pc: transparent;
+
+$pc-width: calc(1170/100%);
+$pc-max: 1170px;
+
+$work-title: 2.0rem;
+$pc-work-title: 2.4rem;

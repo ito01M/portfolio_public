@@ -1,0 +1,161 @@
+.skill-wrap {
+    //    height: 100%;
+    width: 100%;
+    background: url(../img/bg_line.png), linear-gradient(90deg, #dc89c0 50%, #c7de6a 50%);
+    background-size: cover;
+    padding: 108px 0 80px;
+    font-family: $font-jp, $font-en;
+    .item-box {
+        position: relative;
+        width: $item-box-w;
+        margin: 0 auto;
+        background-color: $item-box-bg;
+        border-radius: $item-box-rd;
+        .title-container {
+            margin: 0 10px;
+            .sec-title {
+                display: flex;
+                justify-content: center;
+                h2 {
+                    width: 280px;
+                    display: block;
+                    text-align: center;
+                    margin: 20px 0 0;
+                    padding-bottom: 8px;
+                    padding: 0 10px 8px;
+                    font-size: 2.4rem;
+                    font-weight: normal;
+                    border-bottom: 2px dotted #000;
+                    font-family: $font-en;
+                    span {
+                        font-size: 3.2rem;
+                    }
+                }
+            }
+        }
+        .sub-title {
+            padding-bottom: 40px;
+            p {
+                display: block;
+                text-align: center;
+                margin: 12px 0;
+                font-size: $sub-title;
+                font-family: $font-jp;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .skill-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .skill-box {
+            width: 100%;
+            padding: 0 40px 40px;
+            .skill-img {
+                margin: 0 auto;
+                width: 160px;
+            }
+            .skill-title {
+                font-size: 1.8rem;
+                font-weight: bold;
+                text-align: center;
+                padding: 18px 0;
+                font-family: $font-en;
+            }
+            .skill-txt {
+                max-width: 280px;
+                font-size: 1.4rem;
+                line-height: $txt-lh;
+                margin: 0 auto;
+                font-family: $font-jp;
+                span {
+                    font-size: $font-sz;
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .skill-wrap {
+        height: 100%;
+        background: url(../img/skill_bg.png) no-repeat center 100px, url(../img/bg_line.png), linear-gradient(90deg, #dc89c0 50%, #c7de6a 50%);
+        background-size: cover, cover;
+        background-repeat: no-repeat, no-repeat;
+        padding: 0;
+        .item-box {
+            width: $pc-width;
+            max-width: $pc-max;
+            background-color: $item-box-bg-pc;
+            border-radius: 0;
+            .title-container {
+                margin: 0 10px;
+                .sec-title {
+                    h2 {
+                        margin: 120px 0 0;
+                        font-size: 3.6rem;
+                        span {
+                            font-size: 4.6rem;
+                        }
+                    }
+                }
+            }
+            .sub-title {
+                padding-bottom: 45px;
+                p {
+                    display: block;
+                    text-align: center;
+                    margin: 12px 0;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+    .skill-container {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        padding-bottom: 40px;
+        .skill-box {
+            max-width: 240px;
+            margin: 0 30px 0;
+            padding-bottom: 30px;
+            .skill-img {
+                margin: 0px auto 32px;
+                max-width: 200px;
+                img {
+                    transition: 0.2s;
+                }
+            }
+            .skill-img img:hover {
+                transform: rotate(3deg);
+            }
+            .skill-title {
+                font-size: 2.0rem;
+                font-weight: bold;
+                text-align: center;
+                padding: 12px 0;
+                font-family: $font-en;
+            }
+            .skill-txt {
+                margin: 0 auto;
+                width: 100%;
+                line-height: 1.4;
+                font-family: $font-jp;
+                span {
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

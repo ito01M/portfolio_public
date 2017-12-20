@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+//共通の設定
+@import "base/setting";
+@import "base/reset";
+@import "base/base";
+
+//jquery
+@import "js/fullpage";
+//レイアウト
+@import "layout/wrapper";
+@import "layout/nav";
+@import "layout/footer";
+@import "layout/header";
+
+//パーツ
+
+//ページ
+@import "page/toppage";
+@import "page/about";
+@import "page/work";
+@import "page/skill";
+
+

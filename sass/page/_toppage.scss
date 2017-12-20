@@ -1,0 +1,101 @@
+.top-wrap {
+    background-image: url(../img/left_kumo.png), url(../img/right_kumo.png), url(../img/sp_bg.png);
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-size: 230px 173px, 280px 186px, 320px 500px;
+    background-position: left top 68px, right 0px bottom 40px, center center;
+    font-family: $font-jp,$font-en;
+      
+    .top-logo {
+        .logo-img {
+            height: 500px;
+            margin: 0 auto;
+            background: url(../img/sp_top_logo.png) no-repeat center center;
+            background-size: calc(500/996*100%);
+            text-indent: -9999px;
+        }
+        .top-ico {
+            display: none;
+        }
+        .top-same {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .top-wrap {
+        background-image: url(../img/kumo_bottom.png), url(../img/left_kumo.png), url(../img/right_kumo.png), url(../img/sp_bg.png);
+        background-size: calc(1770/2196*100%), calc(355/1365*100%), calc(370/1196*100%), 320px 500px;
+        background-position: left bottom 10px, left top, right 0px bottom 40px, center center;
+        background-repeat: no-repeat, no-repeat, no-repeat, repeat;
+        
+        .top-logo {
+            max-width: 375px;
+            margin: 0 auto;
+            z-index: 20;
+            background-image: url(../img/top_logo.png);
+            background-size: 375px 288px;
+            background-repeat: no-repeat;
+            height: 100%;
+            background-position: center center;
+            position: relative;
+            .top-ico {
+                display: block;
+                position: absolute;
+                top: 43%;
+                right: 95px;
+            }
+            .logo-img {
+                display: none;
+                position: absolute;
+                bottom: -100px;
+                left: -200px;
+                max-width: 206px;
+                float: left;
+            }
+            .top-same {
+                display: block;
+                position: relative;
+                .same-box {
+                    position: absolute;
+                    bottom: 0px;
+                    left: -500px;
+                    max-width: 206px;
+                    transform-origin: center 150%;
+                    animation: rotate1 8s linear infinite;
+                }
+            }
+            @keyframes rotate1 {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(-360deg);
+                }
+            }
+        }
+    }
+    .fuwafuwa {
+        -webkit-animation: fuwafuwa 2s infinite linear alternate;
+        animation: fuwafuwa 2s infinite linear alternate;
+    }
+    @-webkit-keyframes fuwafuwa {
+        0% {
+            -webkit-transform: translate(0, 0) rotate(0deg);
+        }
+        50% {
+            -webkit-transform: translate(0, -5px) rotate(0deg);
+        }
+        //100% {-webkit-transform:translate(0, 0)rotate(5deg);}
+    }
+    @keyframes fuwafuwa {
+        0% {
+            -webkit-transform: translate(0, 0) rotate(0deg);
+        }
+        50% {
+            -webkit-transform: translate(0, -5px) rotate(0deg);
+        }
+        //        100% {-webkit-transform:translate(0, 0)rotate(5deg);}
+    }
+}
+

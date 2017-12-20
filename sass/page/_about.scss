@@ -1,0 +1,175 @@
+.about-wrap {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/about_bg.png);
+    background-size: 10px 10px;
+    padding: 108px 0 80px;
+    font-family: $font-jp,$font-en;
+    .item-box {
+        width: $item-box-w;
+        margin: 0 auto;
+        background-color: $item-box-bg;
+        border-radius: $item-box-rd;
+        .title-container {
+            .sec-title {
+                display: flex;
+                justify-content: center;
+                margin: 0 10px;
+                h2 {
+                    width: 280px;
+                    display: block;
+                    text-align: center;
+                    margin: 20px 0 0;
+                    padding-bottom: 8px;
+                    font-size: 2.4rem;
+                    font-weight: normal;
+                    border-bottom: 2px dotted #000;
+                    span {
+                        font-size: 3.2rem;
+                    }
+                }
+            }
+            .sub-title {
+                padding-bottom: 40px;
+                p {
+                    display: block;
+                    text-align: center;
+                    margin: 12px 0;
+                    font-size: $sub-title;
+                }
+            }
+        }
+        .about-same {
+            display: none;
+        }
+        .about-container {
+            .about-img {
+                width: calc(254/762*100%);
+                margin: 0 auto;
+                padding-bottom: 40px;
+            }
+            .about-txt {
+                width: 100%;
+                margin: 0 auto;
+                p {
+                    padding: 0 10px 20px;
+                    line-height: $txt-lh;
+                }
+                text-align: center;
+                .a-name {
+                    line-height: $txt-lh;
+                    span {
+                        font-size: 2.0rem;
+                    }
+                }
+                .a-txt01,
+                .a-txt02 {
+                    span {
+                        font-size: 1.8rem;
+                        line-height: 1.8;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-wrap {
+        background-image: url(../img/about_kumo.png), url(../img/about_bg_top.png), url(../img/bg_line.png), linear-gradient(90deg, #dc89c0 50%, #c7de6a 50%);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 100% 100%, 100% 50%, cover;
+        background-position: left top, center center, bottom bottom, bottom bottom;
+        padding: 0;
+        height: 100%;
+        .item-box {
+            width: $pc-width;
+            max-width: $pc-max;
+            background-color: $item-box-bg-pc;
+            position: relative;
+            .title-container {
+                .sec-title {
+                    h2 {
+                        margin: 120px 0 0;
+                        font-size: 3.6rem;
+                        span {
+                            font-size: 4.6rem;
+                        }
+                    }
+                }
+                .sub-title {
+                    padding-bottom: 45px;
+                    p {
+                        display: block;
+                        text-align: center;
+                        margin: 12px 0;
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+            .about-same {
+                z-index: 10;
+                max-width: 190px;
+                display: inline-block;
+                position: absolute;
+                top: 190px;
+                left: 0px;
+                animation: horizontal 1s ease-in-out infinite alternate;
+                animation-duration: .9s
+            }
+            .about-container {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                margin: 0 20px;
+                .about-img {
+                    width: calc(400/742*100%);
+                    max-width: 224px;
+                    padding-bottom: 0;
+                    margin: 60px 40px;
+                }
+                .about-txt {
+                    max-width: 380px;
+                    margin: 0 40px 0 40px;
+                    p {
+                        font-size: 1.6rem;
+                        padding: 0 10px 12px;
+                        line-height: 1.6;
+                    }
+                    text-align: left;
+                    .a-name {
+                        line-height: 1.6;
+                        span {
+                            font-size: 2.0rem;
+                            font-weight: normal;
+                        }
+                    }
+                    .a-txt01,
+                    .a-txt02 {
+                        span {
+                            font-size: 1.8rem;
+                            line-height: 1.6;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @keyframes horizontal {
+        0% {
+            transform: translateX( -30px);
+            transform: translateY(30px);
+        }
+        100% {
+            transform: translateX( 0px);
+        }
+    }
+    @keyframes vertical {
+        0% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY( 20px);
+        }
+    }
+}

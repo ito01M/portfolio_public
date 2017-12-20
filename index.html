@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>portfolio_site</title>
+    <meta name="description" content="ポートフォリオサイト">
+    <meta name="viewport" content="width-device-width,initial-scale=1">
+    <meta name="robots" content="noindex">
+    <meta name="robots" content="nofollow">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header id="header">
+        <div id="head-wrap">
+            <div class="btn-wrap">
+                <button class="nav-btn">
+                    menu
+                     </button>
+            </div>
+
+            <div id="nav-container">
+                <div id="inner">
+                    <nav id="gnav">
+                        <ul>
+                            <li date-menuanchor="slide1"><a href="#page/slide1">TOP</a></li>
+                            <li date-menuanchor="slide2"><a href="#page/slide2">ABOUT</a></li>
+                            <li date-menuanchor="slide3"><a href="#page/slide3">SKILL</a></li>
+                            <li date-menuanchor="slide4"><a href="#page/slide4">WORK</a></li>
+                        </ul>
+                    </nav>
+
+                    <div id="contact-area">
+                        <ul>
+                            <li class="mail-btn">
+                                <a href="#">mail</a>
+                            </li>
+                            <li class="twi-btn">
+                                <a href="#">twitter</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div id="mail-form">
+        <div id="form-area">
+            <div class="form-title">CONTACT</div>
+            <form action="form-page" method="post">
+                <p>
+                    <label>お名前<br>
+                    <input type="text" name="name"></label>
+                </p>
+                <p>
+                    <label for="mail">E-mail<br></label>
+                    <input type="email" id="mail">
+                </p>
+                <p>
+                    <label for="comment">コメント<br></label>
+                    <textarea id="comment" name="comment" cols="30" rows="5"></textarea>
+                </p>
+                <p class="btn-area">
+                    <input type="reset" value="リセット" id="reset-btn">
+                    <input type="button" value="送信する" id="submit-btn">
+                </p>
+
+
+            </form>
+        </div>
+    </div>
+
+    <main id="fullpage-wrap">
+        <div class="section section1">
+            <div class="slide top-wrap" data-anchor="slide1">
+
+                <div class="top-logo">
+                    <div class="top-ico fuwafuwa">
+                        <img src="img/top_logoico.png" alt="" width="42" height="45">
+                    </div>
+                    <div class="logo-img">LOGO</div>
+                    <div class="top-same">
+                        <div class="same-box">
+                            <img src="img/top_same.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" data-anchor="slide2">
+
+                <div class="about-wrap">
+                    <div class="item-box">
+                        <div class="title-container">
+                            <div class="sec-title">
+                                <h2><span>A</span>BOUT</h2>
+                            </div>
+                            <div class="sub-title">
+                                <p>プロフィール</p>
+                            </div>
+
+                        </div>
+                        <div class="about-same">
+                            <img src="img/about_same.png" alt="サメのイラスト">
+                        </div>
+                        <div class="about-container">
+
+                            <div class="about-img">
+
+                                <img src="img/about.gif" alt="自画像">
+                            </div>
+                            <div class="about-txt">
+                                <p class="a-name"><span>伊藤 麻衣</span><br> 1月30日生まれ。
+                                    <br>北海道札幌市出身。</p>
+                                <p>
+                                    雑貨やインテリアが好きです。<br>自分で小物作りもします。
+                                </p>
+                                <p class="a-txt01">
+                                    <span>職務経歴</span><br> 接客販売・事務職/データ管理
+                                </p>
+                                <p class="a-txt02">
+                                    <span>現　在</span><br> 今年7月からWEBスダディサッポロのスマホ・PCサイトデザイン科にて,サイトデザインやコーディングを勉強しています。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide" data-anchor="slide3">
+                <div class="skill-wrap">
+                    <div class="item-box">
+                        <div class="title-container">
+                            <div class="sec-title">
+                                <h2><span>S</span>KILL</h2>
+                            </div>
+                            <div class="sub-title">
+                                <p>スキル・意識していること</p>
+                            </div>
+                        </div>
+
+                        <div class="skill-container">
+                            <div class="skill-box">
+                                <div class="skill-img">
+                                    <img src="img/skill_design.png" alt="デザイン"></div>
+                                <div class="skill-title">DESIGN</div>
+                                <p class="skill-txt"><span>ツール<br>Photoshop</span><br> サイトデザインやバナー制作をしました。<br>誰に対して何を伝えたいのか、コンセプトをしっかり考える事を意識しています。</p>
+                            </div>
+
+                            <div class="skill-box">
+                                <div class="skill-img">
+                                    <img src="img/skill_coding.png" alt="コーディング">
+                                </div>
+                                <div class="skill-title">CODING</div>
+                                <p class="skill-txt"><span>ツール<br>Brackets/Atom</span><br>主に授業課題のサイト作りを中心にコーディングを行いました。
+                                    <br>よりスムーズに正確なコーディングができるように日々学習中です。</p>
+                            </div>
+                            <div class="skill-box">
+                                <div class="skill-img">
+                                    <img src="img/skill_idea.png" alt="アイデア">
+                                </div>
+                                <div class="skill-title">IDEA</div>
+                                <p class="skill-txt"><span>作ること<br>考えること<br></span><br>学生の頃からものづくりが好きで、自分のアイデアや工夫を形にしていくことに楽しさを感じます。<br>トレンドやニーズに合ったデザインを目指しています。</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide" data-anchor="slide4">
+                <div class="work-wrap">
+                    <div class="work-same">
+                        <div class="same-box-w">
+                            <img src="img/work_same_maguro.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item-box">
+                        <div class="title-container">
+                            <div class="sec-title">
+                                <h2><span>W</span>ORK</h2>
+                            </div>
+                            <div class="sub-title">
+                                <p>授業課題や個人で作成したもの</p>
+                            </div>
+                        </div>
+
+                        <div class="work-container">
+
+                            <div class="work-left">
+                                <div class="work-title">
+                                    <p>Banner</p>
+                                </div>
+                                <div class="work-box01">
+                                    <ul class="box01-top">
+                                        <li>
+                                            <a href="img/work_box01_01.jpg"><img src="img/work_banner_ico01.png" width="100" height="100" alt="photo1"></a>
+                                        </li>
+                                        <li>
+                                            <a href="img/work_box01_02.jpg"><img src="img/work_banner_ico02.png" width="100" height="100" alt="photo2"></a>
+                                        </li>
+                                        <li>
+                                            <a href="img/work_box01_03.jpg"><img src="img/work_banner_ico03.png" width="100" height="100" alt="photo3"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="box01-bottom">
+                                        <li>
+                                            <a href="img/work_box01_04.jpg"><img src="img/work_banner_ico04.png" width="100" height="100" alt="photo1"></a>
+                                        </li>
+                                        <li>
+                                            <a href="img/work_box01_05.jpg"><img src="img/work_banner_ico05.png" width="100" height="100" alt="photo2"></a>
+                                        </li>
+                                        <li>
+                                            <a href="img/work_box01_06.jpg"><img src="img/work_banner_ico06.png" width="100" height="100" alt="photo3"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="work-01-txt">
+                                    課題では札幌グランドホテルや訓練校のバナーを作成しました。<br>個人で作成したものは実際に行ったものや活用しているものを題材にしました。
+                                </p>
+                            </div>
+                            <div class="work-right">
+                                <div class="work-title">
+                                    <p>Website</p>
+                                </div>
+                                <div class="work-box02">
+                                    <ul class="box02">
+                                        <li>
+                                            <a href="http://nextone304.webcrow.jp/2017_07/group/kuma/nextone" target="_blank"><img src="img/work_box02_ico01.png" width="100" height="100" alt="ネクストワン札幌支社ウェブサイト"></a>
+                                        </li>
+                                        <li>
+                                            <a href="http://nextone304.webcrow.jp/2017_07/akarenga/pc01/html/" target="_blank"><img src="img/work_box02_ico02.png" width="100" height="100" alt="赤れんが庁舎ウェブサイト"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="work-02-txt">
+                                    グループ実習で作成した訓練校のサイトや授業課題で作成した赤れんが庁舎のサイトデザインをしました。<br>画像から作成したページを見ることができます。
+                                </p>
+                            </div>
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <footer id="footer">
+        <p><small>&copy; 2017 portfolio</small></p>
+    </footer>
+
+
+    <!---->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="js/jquery.easings.min.js"></script>
+    <script src="js/scrolloverflow.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        $(function() {
+            $('#fullpage-wrap').fullpage({
+                menu: "#gnav",
+                anchors: ['page'],
+                scrollOverflow: true,
+//                onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
+//                    var leavingSlide = $(this);
+//
+//                    //leaving the first slide of the 2nd Section to the right
+//                    if (index == 1 && slideIndex == 0 && direction == 'right') {
+//                        alert("Leaving the fist slide!!");
+//                    }
+//
+//                    //leaving the 3rd slide of the 2nd Section to the left
+//                    if (index == 1 && slideIndex == 1 && direction == 'left') {
+//                        alert("Going to slide 2! ");
+//                    }
+//                }
+            });
+        });
+
+    </script>
+
+    </body>
+
+        </html>
